@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+            transition: 1s background-color;
+        }
+    </style>
+</head>
+<body>
+    <button id="button">Сменить цвет заднего фона</button>
+</body>
+<script>
+    "use strict"
+    let body = document.body;
+    body.style.backgroundColor = "white";
+    function changeBodyBgColor() {
+        if (body.style.backgroundColor == "white") {
+            body.style.backgroundColor = "red";
+        } else {
+            body.style.backgroundColor = "white";
+        }
+    }
+
+    document.getElementById("button").addEventListener("click", changeBodyBgColor);
+</script>
+</html>
