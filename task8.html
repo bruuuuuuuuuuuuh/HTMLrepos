@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @media screen and (min-width: 720px) {
+            .header{
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .headerElem {
+                padding: 15px;
+            }
+
+            .elem {
+                width: 300px;
+                height: 400px;
+                margin: 20px;
+            }
+        }
+        
+        @media screen and (max-width: 720px) {
+            .header {
+                flex-direction: column;
+            }
+
+            .headerElem {
+                margin-bottom: 5px;
+                padding: 5px;
+                text-align: center;
+            }
+
+            .elem {
+                width: 150px;
+                height: 250px;
+                margin: 10px;
+            }
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Calibri;
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+
+        }
+
+        .headerElem {
+            border: 1px solid black;
+        }
+
+        .elemWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .elem {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="headerElem">Элемент меню 1</div>
+        <div class="headerElem">Элемент меню 2</div>
+        <div class="headerElem">Элемент меню 3</div>
+        <div class="headerElem">Элемент меню 4</div>
+        <div class="headerElem">Элемент меню 5</div>
+    </div>
+    <div class="main">
+        <div class="elemWrapper">
+            <div class="elem">Текст</div>
+            <div class="elem">Текст</div>
+            <div class="elem">Текст</div>
+            <div class="elem">Текст</div>
+            <div class="elem">Текст</div>
+            <div class="elem">Текст</div>
+            <div class="elem">Текст</div>
+            <div class="elem">Текст</div>
+        </div>
+    </div>
+
+</body>
+</html>
